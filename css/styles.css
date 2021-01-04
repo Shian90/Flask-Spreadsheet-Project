@@ -1,0 +1,19 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 10vw 5vh 10vh;
+}
+
+
+.button-group {
+    justify-self: space-between;
+    margin: 5vh 10vw 5vh 10vh;
+}
+
+.order-table {
+    position: static;
+}
+
+.action-buttons {
+    position: static;
+}
