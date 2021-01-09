@@ -4,7 +4,7 @@ console.log(selectedMonth)
 console.log(selectedBatch)
 
 function generateMessages(){
-    fetch('http://127.0.0.1:5000/generatemessage', {
+    fetch('https://cherryapi.herokuapp.com/generatemessage', {
   method: 'post',
   headers: {
     'Accept': 'application/json, text/plain, /',
@@ -15,11 +15,10 @@ function generateMessages(){
     let messageBox = document.getElementById("xxx")
     //console.log(result)
     let messagesArray = JSON.parse(result)
-    console.log(messagesArray)
     messagesArray.forEach((message) =>{
-       // messageText = message + "        "
-       // messageBox.appendChild(message)
-       var text = document.createTextNode(message);
+       let messageTemp = message.replace(/(\r\n|\n|\r)/gm, "<br>");
+       var text = document.createElement("p");
+       text.innerHTML = messageTemp
        messageBox.appendChild(text)
        var steak = document.createElement("br")
        messageBox.appendChild(steak)
@@ -28,7 +27,7 @@ function generateMessages(){
 }
 
 function generateInvoice(){
-    fetch('http://127.0.0.1:5000/generateinvoices', {
+    fetch('https://cherryapi.herokuapp.com/generateinvoices', {
   method: 'post',
   headers: {
     'Accept': 'application/json, text/plain, /',

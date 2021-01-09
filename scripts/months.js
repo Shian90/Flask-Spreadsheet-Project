@@ -2,7 +2,7 @@ let select = document.querySelector('select')
 let button = document.querySelector('button')
 let selectedMonth
 
-fetch('http://127.0.0.1:5000/months')
+fetch('https://cherryapi.herokuapp.com/months')
     .then(response => response.json())
     .then(months => {
         monthArray = JSON.parse(months)

@@ -2,7 +2,7 @@ let selectedMonth = sessionStorage.getItem("month")
 console.log(selectedMonth)
 let batchesList = document.querySelector("select")
 
-fetch('http://127.0.0.1:5000/batches', {
+fetch('https://cherryapi.herokuapp.com/batches', {
   method: 'post',
   headers: {
     'Accept': 'application/json, text/plain, /',
