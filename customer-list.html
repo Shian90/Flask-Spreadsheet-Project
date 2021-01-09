@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-                <h1 class="display-4">Customer List</h1>
+                <h1 class="display-4">Batch List</h1>
             </div>
         </div>
 
@@ -40,43 +40,21 @@
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-                <div class="list-group" role="tablist">
-                    <a href="#" class="list-group-item list-group-item-action" data-toggle="list">Cras justo odio</a>
-                    <a href="#" class="list-group-item list-group-item-action" data-toggle="list">Dapibus ac facilisis in</a>
-                    <a href="#" class="list-group-item list-group-item-action" data-toggle="list">Morb leo risus</a>
-                    <a href="#" class="list-group-item list-group-item-action" data-toggle="list">Porta ac consectetur ac</a>
-                    <a href="#" class="list-group-item list-group-item-action" data-toggle="list">Vestibulum at eros</a>
-                  </div>
+                <select class="form-control" id="batchDropdown">
+                    <option>None</option>
+                </select>
             </div>
-        
         </div>
-
+        
         <div class="row">
             <div class="p-3"></div>
         </div>
-
+        
         <div class="row">
             <div class="col-3"></div>
-
-            <div class="col-2">
-                <p class="lead">Selected Customer</p>
-            </div>
-
-            <div class="col-3">
-
-                <form>
-                    <div class="form-row">
-                        <div class="col">
-                            <input class="form-control" type="text" placeholder="Selected Customer" value= "" readonly>
-                        </div>
-                    </div>
-                </form>
-                    
-            </div>
-
             <div class="col-1">
                 <a href="order.html">
-                    <button type="button" class="btn btn-dark">Go!</button>
+                    <button type="button" class="btn btn-dark" >Go!</button>
                 </a>
             </div>
         </div>
@@ -95,6 +73,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src = "scripts/batches.js"></script>
 </body>
 
 </html>

@@ -19,143 +19,25 @@
             background-color: #E9ECEF;
         }
     </style>
+    <script src="scripts/messages.js"></script>
 </head>
 
 <body>
-
-
-    <section class="order-table">
-        <h1 class="flex-row">Orders</h1>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-    
-                    <th scope="col">Timestamp</th>
-                    <th scope="col">Order number</th>
-                    <th scope="col">Shipment</th>
-                    <th scope="col">Batch</th>
-                    <th scope="col">Packing Status</th>
-                    <th scope="col">Customer Status</th>
-                    <th scope="col">Client ID</th>
-                    <th scope="col">Order type</th>
-                    <th scope="col">Facebook Name</th>
-                    <th scope="col">Order Status</th>
-    
-                    <th scope="col">Remarks</th>
-                    <th scope="col">Item Brand</th>
-                    <th scope="col">Item Name</th>
-                    <th scope="col">Item Shade and/or Item Size</th>
-                    <th scope="col">Item Link</th>
-                    <th scope="col">Item Quantity</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">WC</th>
-                    <th scope="col">Adv.</th>
-                    <th scope="col">Delivery Area</th>
-                    <th scope="col">Contact Number</th>
-                    <th scope="col">Full Delivery Address</th>
-                    <th scope="col">Profile Link</th>
-                    <th scope="col">Email address</th>
-                    <th scope="col">Delivery Sub-District/District</th>
-    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">3/21/2020 20:13:01</th>
-                    <td>19</td>
-                    <td>August</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>10557</td>
-                    <td>Preorder</td>
-                    <td>Nashia Rahman</td>
-                    <td>Delivered</td>
-                    <td></td>
-                    <td>Beauty Bakerie</td>
-                    <td>Beauty sponge </td>
-                    <td></td>
-                    <td></td>
-                    <td>1</td>
-                    <td>280</td>
-                    <td></td>
-                    <td></td>
-                    <td>Inside Dhaka</td>
-                    <td>01772493889</td>
-                    <td>Secot 12, uttara</td>
-                    <td><a href="https://www.facebook.com/nashi.khashi11">https://www.facebook.com/nashi.khashi11</a></td>
-                    <td>nashia.rahman11@gmail.com</td>
-                    <td></td>
-    
-                </tr>
-                <tr>
-                    <th scope="row">3/21/2020 20:13:01</th>
-    
-                    <td>19</td>
-                    <td>August</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>10557</td>
-                    <td>Preorder</td>
-                    <td>Nashia Rahman</td>
-                    <td>Delivered</td>
-                    <td></td>
-                    <td>Beauty Bakerie</td>
-                    <td>Beauty sponge </td>
-                    <td></td>
-                    <td></td>
-                    <td>1</td>
-                    <td>280</td>
-                    <td></td>
-                    <td></td>
-                    <td>Inside Dhaka</td>
-                    <td>01772493889</td>
-                    <td>Secot 12, uttara</td>
-                    <td><a href="https://www.facebook.com/nashi.khashi11">https://www.facebook.com/nashi.khashi11</a></td>
-                    <td>nashia.rahman11@gmail.com</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">3/21/2020 20:13:01</th>
-    
-                    <td>19</td>
-                    <td>August</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>10557</td>
-                    <td>Preorder</td>
-                    <td>Nashia Rahman</td>
-                    <td>Delivered</td>
-                    <td></td>
-                    <td>Beauty Bakerie</td>
-                    <td>Beauty sponge </td>
-                    <td></td>
-                    <td></td>
-                    <td>1</td>
-                    <td>280</td>
-                    <td></td>
-                    <td></td>
-                    <td>Inside Dhaka</td>
-                    <td>01772493889</td>
-                    <td>Secot 12, uttara</td>
-                    <td><a href="https://www.facebook.com/nashi.khashi11">https://www.facebook.com/nashi.khashi11</a></td>
-                    <td>nashia.rahman11@gmail.com</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
+    <div class="container jumbotron">
+        <div class= "row p-3"></div>
+        <div class= "row">
+            <div class = "col-1"></div>
+            <div class="col-11"><div class="alert alert-info" id = "xxx"></div></div>
+        </div>
+        <div class="row">
     <section class="action-buttons">
         <div class=" button-group">
-            <button type="button" class="btn btn-primary">Download Invoice</button>
-            <button type="button" class="btn btn-danger">Send Message</button>
+            <button type="button" class="btn btn-primary" onclick="generateInvoice()">Generate Invoice</button>
+            <button type="button" class="btn btn-danger" onclick="generateMessages()">Generate Message</button>
         </div>
     </section>
-
-    
+    </div>
+    </div>
 
 
 
@@ -170,6 +52,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script >
+        
+    </script>
 
 </body>
 
