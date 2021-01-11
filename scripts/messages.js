@@ -16,6 +16,7 @@ function generateMessages(){
     //console.log(result)
     let messagesArray = JSON.parse(result)
     messagesArray.forEach((message) =>{
+       console.log(message)
        let messageTemp = message.replace(/(\r\n|\n|\r)/gm, "<br>");
        var text = document.createElement("p");
        text.innerHTML = messageTemp
@@ -35,5 +36,10 @@ function generateInvoice(){
   },
   body: JSON.stringify({month: selectedMonth, batch: selectedBatch})
 }).then(()=> alert("Done!"))
+}
 
+function goBatches()
+{
+    sessionStorage.removeItem("month")
+    sessionStorage.removeItem("Batch")
 }

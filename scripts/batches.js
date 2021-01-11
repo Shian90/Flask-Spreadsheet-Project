@@ -23,3 +23,8 @@ batchesList.addEventListener('click', ()=>{
     console.log(selectedBatch)
     sessionStorage.setItem("Batch", selectedBatch);
 })
+
+function goMonths()
+{
+    sessionStorage.removeItem("month")
+}
