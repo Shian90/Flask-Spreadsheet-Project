@@ -1,7 +1,10 @@
 let selectedMonth = sessionStorage.getItem("month")
 let selectedBatch = sessionStorage.getItem("Batch")
+let infoMsgInv = document.getElementById("monthBatch")
 console.log(selectedMonth)
 console.log(selectedBatch)
+
+infoMsgInv.innerHTML = "Generating messages for " + selectedMonth + " Batch " + selectedBatch
 
 function generateMessages(){
     fetch('https://cherryapi.herokuapp.com/generatemessage', {
